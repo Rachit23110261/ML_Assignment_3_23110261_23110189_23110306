@@ -146,11 +146,11 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # Load multiple models
 def load_models():
     model1 = NextWord(block_size, vocab_size, emb_dim).to(device)
-    checkpoint1 = torch.load('model.pth', map_location='cpu')
+    checkpoint1 = torch.load('APP/model.pth', map_location='cpu')
     model1.load_state_dict(checkpoint1['model_state_dict'])
 
     model2 = NextWord(block_size, vocab_size, emb_dim).to(device)
-    checkpoint2 = torch.load('model11.pth', map_location='cpu')
+    checkpoint2 = torch.load('APP/model11.pth', map_location='cpu')
     model2.load_state_dict(checkpoint2['model_state_dict'])
 
     return model1, model2

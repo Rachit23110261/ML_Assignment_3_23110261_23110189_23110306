@@ -1,5 +1,5 @@
 # Specify the file path
-file_path = 'warpeace_input.txt'  # Update with your actual file name
+file_path = "APP/warpeace_input.txt"
 # Open and read the contents of the .txt file
 with open(file_path, 'r') as file:
     data = file.read()

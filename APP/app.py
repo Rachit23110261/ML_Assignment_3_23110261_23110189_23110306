@@ -202,9 +202,10 @@ st.title("Next Word Prediction App with Multiple Models")
 # Let the user choose a model
 model_choice = st.selectbox("Choose a model:", ["Model 1", "Model 2"])
 activation_function = st.selectbox("Choose activation function:", ["ReLU", "Tanh"])
+embedding_size = st.selectbox("Choose embedding size:", ["128", "64"])
 
 # User input
-input_text = st.text_input("Enter initial text for prediction:", "The cat sat")
+input_text = st.text_input("Enter initial text for prediction:", "we can say that")
 context_length = 5
 max_len = st.slider("Number of words to predict", 1, 10, 5)
 

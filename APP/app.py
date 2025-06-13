@@ -1,14 +1,11 @@
 # Specify the file path
 file_path = 'warpeace_input.txt'  # Update with your actual file name
-
 # Open and read the contents of the .txt file
 with open(file_path, 'r') as file:
     data = file.read()
-
 # Display the content
 print(len(data))
 import re
-
 # Define the regular expression to clean each line
 def clean_line(line):
     # Modify this regex depending on the type of text/code you're processing
